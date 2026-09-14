@@ -1,7 +1,8 @@
 <?php
-namespace Blog\View; // PSR-12: head blocks must be separated by a single blank line
+namespace View\HomepageView;
 class Homepage { // PSR-12: opening brace next line
-…
+    private $posts;
+
     public function show(): void { // PSR-12: opening brace next line
         ob_start();
         ?><h1>Les derniers billets du blog</h1>
@@ -10,11 +11,11 @@ class Homepage { // PSR-12: opening brace next line
                 <h3><?= htmlspecialchars($post->getTitle()); ?><em>: <?= $post->getDate(); ?></em></h3>
                 <p>
                     <?= nl2br(htmlspecialchars($post->getContent())); ?><br>
-                    <em><a href="index.php?action=post&id=<?= urlencode($post->getId() ?>">+</a></em>
+                    <em><a href="../../index.php?action=post&id=<?= urlencode($post->getId()) ?>">+</a></em>
                 </p>
             </div>
             <?php
         }
-        (new \Blog\Views\Layout('Le meilleur blog', ob_get_clean()))->show();
+        (new \View\Layout\Layout('Le meilleur blog', ob_get_clean()))->show();
     }
 }

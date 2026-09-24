@@ -1,5 +1,5 @@
 <?php
-namespace Controllers\Homepage;
+namespace Controllers;
 //use Includes\Database\DatabaseConnection, Blog\Models\Post\PostRepository;
 class Homepage
 {

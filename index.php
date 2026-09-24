@@ -1,4 +1,7 @@
 <?php
+
+use Includes\Autoloader;
+
 require '_assets/includes/autoloader.php';
 
 try {
@@ -8,10 +11,11 @@ try {
                 (new \Controllers\Post\Post())->execute($_GET['id']);
             }
             throw new ControllerException('Aucun identifiant de billet envoyé');
-        }
+        } 
         throw new ControllerException('La page que vous recherchez n\'existe pas');
     }*/
-    (new \Controllers\Homepage\Homepage())->execute();
-} catch (ControllerException $e) {
-    (new \Blog\Views\Error($e->getMessage()))->show();
+    (new Includes\Autoloader())-> register();
+    (new \Controllers\Homepage())->execute();
+} catch (\Controllers\ControllerException $e) {
+    (new \Views\Error($e->getMessage()))->show();
 }

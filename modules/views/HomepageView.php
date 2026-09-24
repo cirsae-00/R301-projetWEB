@@ -1,5 +1,5 @@
 <?php
-namespace View\HomepageView;
+namespace Views;
 class Homepage { // PSR-12: opening brace next line
     private $posts;
 

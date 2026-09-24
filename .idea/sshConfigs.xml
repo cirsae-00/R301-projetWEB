@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="ssh-r301-fa.alwaysdata.net" id="efa22ca1-608e-467a-84de-50de056d5db6" port="22" nameFormat="DESCRIPTIVE" username="r301-fa" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

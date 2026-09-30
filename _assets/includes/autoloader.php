@@ -8,7 +8,7 @@ class Autoloader
         spl_autoload_register(function ($class) {
 
             $path = __DIR__ . DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'. DIRECTORY_SEPARATOR . 'modules'. DIRECTORY_SEPARATOR . lcfirst(str_replace('\\', DIRECTORY_SEPARATOR, $class)) . '.php';
-            var_dump($path);
+            var_dump($path); #pas oublier de l'enlever
             if (file_exists($path)) {
                 require $path;
                 return $path;

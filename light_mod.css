@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lexend:wght@100..900&display=swap');
+.julius-sans-one-regular {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.lexend{
+             font-family: "Lexend", sans-serif;
+             font-optical-sizing: auto;
+             font-weight:200;
+             font-style: normal;
+         }
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    background-color: #E9D9D6;
+    font-family: "Lexend", sans-serif;
+    color: #E38575;
+    margin-bottom: 20%;
+}
+
+table {
+    min-height: 300%;
+    min-width: 200%;
+}
+
+td {
+    
+    background-color: whitesmoke;
+    
+}
+
+

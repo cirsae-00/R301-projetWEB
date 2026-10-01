@@ -6,7 +6,7 @@ class Homepage
 {
     public function execute(): void
     {
-        echo 'controller';
+        
         (new \Views\HomepageView())->show();
 
     }

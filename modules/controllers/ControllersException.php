@@ -1,8 +1,8 @@
 <?php
 
-namespace Controllers;
+namespace controllers;
 
-class ControllerException extends \Exception
+class ControllersException extends \Exception
 {
 
 }

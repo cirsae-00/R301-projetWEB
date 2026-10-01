@@ -1,7 +1,7 @@
 <?php
 
-namespace Includes;
-class Autoloader
+namespace includes;
+class autoloader
 {
     public static function register(): void
     {
@@ -17,4 +17,4 @@ class Autoloader
     }
 }
 
-Autoloader::register();
+autoloader::register();

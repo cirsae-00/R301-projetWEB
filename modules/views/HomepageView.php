@@ -7,7 +7,7 @@ class HomepageView { // PSR-12: opening brace next line
             <h1>BONJOUR</h1>
             <?php
 
-            (new \Views\Layout('Les employed divas', ob_get_clean()))->show();
+            (new \views\Layout('Les employed divas', ob_get_clean()))->show();
         }
 
     }

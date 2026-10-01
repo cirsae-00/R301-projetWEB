@@ -1,6 +1,6 @@
 <?php
-namespace Views;
-class Layout { // PSR-12: opening brace next line
+namespace views;
+readonly class Layout { // PSR-12: opening brace next line
 public function __construct(private string $title, private string $content) {}
 public function show(): void { // PSR-12: opening brace next line
 ?><!DOCTYPE html>

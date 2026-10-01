@@ -4,11 +4,12 @@ require '_assets/includes/autoloader.php';
 
 try {
     
-    (new Includes\Autoloader())-> register();
-    (new Controllers\Homepage())->execute();
+    (new includes\autoloader())-> register();
+    echo 'router';
+    (new controllers\Homepage())->execute();
     
-} catch (\Controllers\ControllerException $e) {
+} catch (\controllers\ControllersException $e) {
     
-    (new \Views\Error($e->getMessage()))->show();
+    (new \views\Error($e->getMessage()))->show();
     
 }

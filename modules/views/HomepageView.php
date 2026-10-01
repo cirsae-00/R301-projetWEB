@@ -68,7 +68,7 @@ class HomepageView { // PSR-12: opening brace next line
             <button>Se connecter</button>
             <?php
 
-            (new \Views\Layout('Les employed divas', ob_get_clean()))->show();
+            (new \views\Layout('Les employed divas', ob_get_clean()))->show();
         }
 
     }

@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Lexend:wght@100..900&display=swap');
+:root {
+    --bg: #E9D9D6;
+    --accent: #E38575;
+    --cell: #FEFAFA;
+    --placeholder: #F1CFC9;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 1rem 1rem 4rem;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: var(--bg);
+    font-family: "Lexend", sans-serif;
+    font-weight: 300;
+    color: var(--accent);
+}
+
+h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-weight: 400;
+    letter-spacing: 0.08em;
+    text-align: center;
+}
+
+/* Grille 6 colonnes x 5 lignes */
+table {
+    border-collapse: separate;
+    border-spacing: 3px;
+}
+
+td {
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--cell);
+}
+
+/* Champ de saisie */
+form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    width: min(100%, 30rem);
+}
+
+input[type="text"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem 1.2rem;
+    border: none;
+    background-color: var(--cell);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+input[type="text"]::placeholder {
+    color: var(--placeholder);
+}
+
+input[type="text"]:focus {
+    outline: 2px solid var(--accent);
+}
+
+/* Bouton */
+button {
+    margin-top: 2rem;
+    width: 13rem;
+    height: 4rem;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--cell);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.97);
+}

@@ -5,7 +5,6 @@ require '_assets/includes/autoloader.php';
 try {
     
     (new includes\autoloader())-> register();
-    echo 'router';
     (new controllers\Homepage())->execute();
     
 } catch (\controllers\ControllersException $e) {

@@ -4,7 +4,68 @@ class HomepageView { // PSR-12: opening brace next line
         public function show(): void { // PSR-12: opening brace next line
             ob_start();
         ?>
-            <h1>BONJOUR</h1>
+            <h1>INFODLE</h1>
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+
+            </table>
+
+            <form>
+                <label>
+                    <input type="text" id="wordEntered" name="wordEntered" placeholder="Entrez un mot" minlength="6" maxlength="6" required>
+                </label>
+
+            </form>
+
+            <button>Se connecter</button>
             <?php
 
             (new \views\Layout('Les employed divas', ob_get_clean()))->show();

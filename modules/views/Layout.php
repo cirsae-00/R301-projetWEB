@@ -62,6 +62,7 @@ public function show(): void { // PSR-12: opening brace next line
 
 </head>
 <body>
+<h1>INFODLE</h1>
 <?= $this->content; ?>
 </body>
 </html>

@@ -20,12 +20,16 @@ class LoginView
                 <label>
                     <input type="password" name="password" placeholder="Mot de passe">
                 </label>
+                <a href="../../index.php?page=pwforgotten">Mot de passe oublié ?</a>
+                <label>
+                    <input type="submit" name="login" value="Connexion">
+                </label>
             </form>
 
         </section>
         <?php
 
-        (new \views\Layout('Les employed divas', ob_get_clean()))->show();
+        (new \views\Layout('Connexion', ob_get_clean()))->show();
     }
 
 }

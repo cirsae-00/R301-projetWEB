@@ -1,44 +1,28 @@
 <?php
 
 namespace controllers;
-require '_assets/includes/autoloader.php';
-require 'modules/controllers/ControllersException.php';
-require 'modules/views/Error.php';
-
-
 class Router
 {
-    private $_ctrl;
+    private array $routes = [
+        'home'  => \Controllers\Homepage::class,
+        'login' => \Controllers\Login::class,
+        //'register' => 'Register',
+        //'legal' => 'Legal',
+        'pwforgotten' => \Controllers\PwForgotten::class,
+    ];
 
-    public function routeReq()
+    public function route(): void
     {
-        try {
-            $url = '';
+        $page = $_GET['page'] ?? 'home';
 
-            if (isset($_GET['url'])) {
-                $url = explode('/', filter_var($_GET['url'], FILTER_SANITIZE_URL));
-
-                /*On récupère le premier paramètre d'url puis on met la première lettre en majuscule
-                et le reste en minuscule*/
-                $controller = ucfirst(strtolower($url[0]));
-                //On recupère le fichier de la classe controlleur (modules/controllers/Homepage.php)
-                $controllerFile = "controllers/" . $controller . ".php";
-                if (file_exists($controllerFile)) {
-                    require_once $controllerFile;
-                    $this->_ctrl = new $controller($url);
-                } //Si l'url n'existe pas on renvoie une erreur
-                else {
-                    throw new \controllers\ControllersException('Page introuvable');
-                }
-            } else {
-                require_once 'modules/controllers/Homepage.php';
-                $this->_ctrl = new Homepage($url);
-
-            }
-        } catch (\controllers\ControllersException $e) {
-            $errorMsg = $e->getMessage();
-            require_once ('modules/views/Error.php');
-
+        if (!isset($this->routes[$page])) {
+            http_response_code(404);
+            require __DIR__ . '/../views/Error.php';
+            return;
         }
+
+        $class = $this->routes[$page];
+        (new $class())->execute();
     }
+
 }

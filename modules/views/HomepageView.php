@@ -63,7 +63,7 @@ class HomepageView { // PSR-12: opening brace next line
                 </label>
 
             </form>
-            <a href="../controllers/Login.php" class="se_connecter">Se connecter</a>
+            <a href="../../index.php?page=login" class="se_connecter">Se connecter</a>
             <?php
 
             (new \views\Layout('Les employed divas', ob_get_clean()))->show();

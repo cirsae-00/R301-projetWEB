@@ -6,7 +6,7 @@
       <paths name="r301">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/www/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

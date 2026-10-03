@@ -52,13 +52,9 @@ public function show(): void { // PSR-12: opening brace next line
     <!-- END -->
 
     <title><?=$this->title ?></title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../../images/favicon.webp">
-    <link  id="theme" rel="stylesheet" href="../../light_mod.css">
-    <script src="app.min.js" defer></script>
+    <link  id="theme" rel="stylesheet" type="css" href="../../light_mod.css">
+
 
 </head>
 <body>

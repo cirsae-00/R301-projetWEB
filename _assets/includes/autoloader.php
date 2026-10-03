@@ -1,7 +1,20 @@
 <?php
-    function my_autoload(string $class): void {
-        
-        include __DIR__. '..\..\modules' . '\\' . $class . '.php';
 
+namespace includes;
+class autoloader
+{
+    public static function register(): void
+    {
+        spl_autoload_register(function ($class) {
+
+            $path = __DIR__ . DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'..'. DIRECTORY_SEPARATOR . 'modules'. DIRECTORY_SEPARATOR . lcfirst(str_replace('\\', DIRECTORY_SEPARATOR, $class)) . '.php';
+            if (file_exists($path)) {
+                require $path;
+                return $path;
+            }
+            return false;
+        });
     }
-spl_autoload_register('my_autoload');
+}
+
+autoloader::register();

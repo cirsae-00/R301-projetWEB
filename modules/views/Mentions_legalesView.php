@@ -1,7 +1,7 @@
 <?php
 namespace views;
 
-class mentions_legales {
+class Mentions_legalesView {
     public function show(): void {
         ob_start();
         ?>
@@ -36,6 +36,6 @@ class mentions_legales {
 
         <?php
 
-        (new \views\Layout('Les employed divas', ob_get_clean()))->show();
+        (new \views\Layout('Mentions légales', ob_get_clean()))->show();
     }
 }

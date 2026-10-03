@@ -4,7 +4,6 @@ class HomepageView { // PSR-12: opening brace next line
         public function show(): void { // PSR-12: opening brace next line
             ob_start();
         ?>
-            <h1>INFODLE</h1>
             <table>
                 <tr>
                     <td></td>
@@ -64,10 +63,7 @@ class HomepageView { // PSR-12: opening brace next line
                 </label>
 
             </form>
-
-            <button>Se connecter</button>
-
-            <a href="Mentions_legales.php">mentions légales</a>
+            <a href="../../index.php?page=login" class="se_connecter">Se connecter</a>
             <?php
 
             (new \views\Layout('Les employed divas', ob_get_clean()))->show();

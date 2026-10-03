@@ -2,8 +2,8 @@
 
 namespace controllers;
 require '_assets/includes/autoloader.php';
-require 'modules/controllers/ControllersException.php';
-require 'modules/views/Error.php';
+include 'modules/controllers/ControllersException.php';
+include 'modules/views/Error.php';
 
 
 class Router

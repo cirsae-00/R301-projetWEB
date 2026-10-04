@@ -52,8 +52,8 @@ public function show(): void { // PSR-12: opening brace next line
     <!-- END -->
 
     <title><?=$this->title ?></title>
-    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
-    <link  id="theme" rel="stylesheet" type="css" href="../../light_mod.css">
+    <?php $base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/'); ?>
+    <link id="theme" rel="stylesheet" href="<?= $base ?>/_assets/css/light_mod.css">
 
 
 </head>

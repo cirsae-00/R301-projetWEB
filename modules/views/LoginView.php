@@ -13,7 +13,7 @@ class LoginView
 
             <h2>Connexion</h2>
 
-            <form method="post" action="">
+            <form method="post" action="" id="form_login">
                 <label>
                     <input type="email" name="email" placeholder="E-Mail">
                 </label>

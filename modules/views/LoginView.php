@@ -27,7 +27,7 @@ class LoginView
             </form>
         </section>
 
-        <a href="../../index.php" class="retour">Retour</a>
+        <a href="../../index.php?=home" class="retour">Retour</a>
         <a href="../../index.php?page=legal" class="mentions_legales">Mentions légales</a>
 
         <?php

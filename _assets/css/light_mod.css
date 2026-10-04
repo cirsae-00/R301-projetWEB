@@ -109,3 +109,143 @@ button:hover {
     transform: translateY(-2px);
     filter: brightness(0.97);
 }
+
+/* ===== Page d'inscription ===== */
+
+/* Carte blanche centrale */
+section:has(#form_register) {
+    box-sizing: border-box;
+    width: min(100%, 24rem);
+    padding: 1.5rem 2rem 2.5rem;
+    background-color: var(--cell);
+    border-radius: 6px;
+    text-align: center;
+}
+
+section:has(#form_register) h2 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
+/* Le formulaire passe en colonne (le "form" global est en ligne) */
+#form_register {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+#form_register label {
+    width: 100%;
+}
+
+/* Champs : fond rosé, comme sur la maquette */
+#form_register input[type="text"],
+#form_register input[type="email"],
+#form_register input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem 0.8rem;
+    border: none;
+    background-color: var(--bg);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+#form_register input::placeholder {
+    color: var(--accent);
+    opacity: 0.8;
+}
+
+#form_register input[type="text"]:focus,
+#form_register input[type="email"]:focus,
+#form_register input[type="password"]:focus {
+    outline: 2px solid var(--accent);
+}
+
+/* Genre : 2 choix sur la première ligne, le 3e centré dessous */
+#gender_choice {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 1.2rem;
+}
+
+/* Légende masquée visuellement (reste lisible par les lecteurs d'écran) */
+#gender_choice legend {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+
+#gender_choice label {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    width: auto;
+    cursor: pointer;
+}
+
+#gender_choice label:nth-of-type(3) {
+    grid-column: 1 / -1;
+    justify-self: center;
+}
+
+/* Boutons radio ronds */
+#gender_choice input[type="radio"] {
+    appearance: none;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin: 0;
+    border: 2px solid var(--accent);
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+
+#gender_choice input[type="radio"]:checked {
+    background-color: var(--accent);
+    box-shadow: inset 0 0 0 3px var(--cell);
+}
+
+/* Bouton Valider */
+#form_register label:has(input[type="submit"]) {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+input[type="submit"] {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background-color: var(--bg);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+input[type="submit"]:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.97);
+}
+
+/* Lien Retour (même style que "Mentions légales") */
+.retour {
+    margin-top: 2rem;
+    color: var(--cell);
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: underline;
+}

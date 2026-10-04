@@ -68,7 +68,7 @@ class HomepageView { // PSR-12: opening brace next line
             <a href="../../index.php?page=legal" class="mentions_legales">Mentions légales</a>
             <?php
 
-            new \views\Layout('Les employed divas', ob_get_clean())->show();
+            new Layout('Les employed divas', ob_get_clean())->show();
         }
 
     }

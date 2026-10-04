@@ -33,7 +33,7 @@ class Mentions_legalesView {
             dont le siège social se trouve 91 rue du Faubourg Saint Honoré - 75008 Paris.</p>
 
 
-        <a href="../../index.php" class="retour">Retour</a>
+        <a href="../../index.php?page=home" class="retour">Retour</a>
 
         <?php
 

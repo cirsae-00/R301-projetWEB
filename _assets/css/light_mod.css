@@ -129,6 +129,22 @@ section:has(#form_register) h2 {
     letter-spacing: 0.05em;
 }
 
+section:has(#form_login) {
+    box-sizing: border-box;
+    width: min(100%, 24rem);
+    padding: 1.5rem 2rem 2.5rem;
+    background-color: var(--cell);
+    border-radius: 6px;
+    text-align: center;
+}
+
+section:has(#form_login) h2 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
 /* Le formulaire passe en colonne (le "form" global est en ligne) */
 #form_register {
     flex-direction: column;
@@ -136,7 +152,17 @@ section:has(#form_register) h2 {
     gap: 1.2rem;
 }
 
+#form_login {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
 #form_register label {
+    width: 100%;
+}
+
+#form_login label {
     width: 100%;
 }
 
@@ -155,7 +181,26 @@ section:has(#form_register) h2 {
     font-weight: 300;
 }
 
+#form_login input[type="text"],
+#form_login input[type="email"],
+#form_login input[type="password"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem 0.8rem;
+    border: none;
+    background-color: var(--bg);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
 #form_register input::placeholder {
+    color: var(--accent);
+    opacity: 0.8;
+}
+
+#form_login input::placeholder {
     color: var(--accent);
     opacity: 0.8;
 }
@@ -166,10 +211,16 @@ section:has(#form_register) h2 {
     outline: 2px solid var(--accent);
 }
 
+#form_login input[type="text"]:focus,
+#form_login input[type="email"]:focus,
+#form_login input[type="password"]:focus {
+    outline: 2px solid var(--accent);
+}
+
 /* Genre : 2 choix sur la première ligne, le 3e centré dessous */
 #gender_choice {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 3fr;
     row-gap: 1rem;
     margin: 0;
     padding: 0;
@@ -189,7 +240,6 @@ section:has(#form_register) h2 {
 #gender_choice label {
     display: flex;
     align-items: center;
-    gap: 0.6rem;
     width: auto;
     cursor: pointer;
 }
@@ -204,7 +254,7 @@ section:has(#form_register) h2 {
     appearance: none;
     width: 1.3rem;
     height: 1.3rem;
-    margin: 0;
+    margin: 0.4rem;
     border: 2px solid var(--accent);
     border-radius: 50%;
     background: transparent;
@@ -223,6 +273,18 @@ section:has(#form_register) h2 {
     margin-top: 1.5rem;
 }
 
+#form_login label:has(input[type="submit"]) {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.oubliMdp {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
 input[type="submit"] {
     padding: 0.6rem 1.2rem;
     border: none;
@@ -237,6 +299,24 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
+    transform: translateY(-2px);
+    filter: brightness(0.97);
+}
+
+.oubliMdp {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    background-color: var(--bg);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.oubliMdp:hover {
     transform: translateY(-2px);
     filter: brightness(0.97);
 }

@@ -15,12 +15,12 @@ class LoginView
 
             <form method="post" action="" id="form_login">
                 <label>
-                    <input type="email" name="email" placeholder="E-Mail">
+                    <input type="email" name="email" placeholder="E-Mail" required>
                 </label>
                 <label>
-                    <input type="password" name="password" placeholder="Mot de passe">
+                    <input type="password" name="password" placeholder="Mot de passe" required>
                 </label>
-                <a href="../../index.php?page=pwforgotten">Mot de passe oublié ?</a>
+                <a href="../../index.php?page=pwforgotten" class="oubliMdp">Mot de passe oublié ?</a>
                 <label>
                     <input type="submit" name="login" value="Connexion">
                 </label>

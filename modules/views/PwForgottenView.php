@@ -21,6 +21,9 @@ class PwForgottenView{
             </form>
 
         </section>
+
+        <a href="../../index.php?page=legal" class="mentions_legales">Mentions légales</a>
+
         <?php
 
         new \views\Layout('Mot de passe oublié', ob_get_clean())->show();

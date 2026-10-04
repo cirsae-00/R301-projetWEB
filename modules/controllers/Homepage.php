@@ -7,7 +7,7 @@ class Homepage
     public function execute(): void
     {
 
-        (new \Views\HomepageView())->show();
+        new \Views\HomepageView()->show();
 
     }
 

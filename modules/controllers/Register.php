@@ -2,12 +2,12 @@
 
 namespace controllers;
 
-class Login
+class Register
 {
     public function execute(): void
     {
 
-        new \Views\LoginView()->show();
+        new \Views\RegisterView()->show();
 
     }
 

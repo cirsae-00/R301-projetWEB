@@ -2,7 +2,7 @@
 
 namespace views;
 
-class LoginView
+class RegisterView
 {
 
     public function show(): void { // PSR-12: opening brace next line
@@ -11,27 +11,25 @@ class LoginView
 
         <section>
 
-            <h2>Connexion</h2>
+            <h2>Inscription</h2>
 
-            <form method="post" action="" id="form_login">
+            <form method="post" action="" id="form_register">
                 <label>
                     <input type="email" name="email" placeholder="E-Mail">
                 </label>
                 <label>
                     <input type="password" name="password" placeholder="Mot de passe">
-                </label>
-                <a href="../../index.php?page=pwforgotten">Mot de passe oublié ?</a>
-                <label>
-                    <input type="submit" name="login" value="Connexion">
+                    <input type="submit" name="sign_in" value="Inscription">
                 </label>
             </form>
+
         </section>
 
         <a href="../../index.php?page=legal" class="mentions_legales">Mentions légales</a>
 
         <?php
 
-        new \views\Layout('Connexion', ob_get_clean())->show();
+        new \views\Layout('Inscription', ob_get_clean())->show();
     }
 
 }

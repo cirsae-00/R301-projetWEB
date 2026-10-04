@@ -4,11 +4,11 @@ namespace controllers;
 class Router
 {
     private array $routes = [
-        'home'  => \Controllers\Homepage::class,
-        'login' => \Controllers\Login::class,
-        //'register' => 'Register',
-        'legal' => \Controllers\Mentions_legales::class,
-        'pwforgotten' => \Controllers\PwForgotten::class,
+        'home'  => Homepage::class,
+        'login' => Login::class,
+        'register' => Register::class,
+        'legal' => Mentions_legales::class,
+        'pwforgotten' => PwForgotten::class,
     ];
 
     public function route(): void

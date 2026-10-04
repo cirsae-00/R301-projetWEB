@@ -22,7 +22,7 @@ class PwForgottenView{
 
         </section>
 
-        <a href="../../index.php" class="retour">Retour</a>
+        <a href="../../index.php?page=home" class="retour">Retour</a>
         <a href="../../index.php?page=legal" class="mentions_legales">Mentions légales</a>
 
         <?php

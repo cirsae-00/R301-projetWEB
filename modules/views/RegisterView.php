@@ -33,13 +33,13 @@ class RegisterView
                     <input type="password" name="password" placeholder="Mot de passe" required>
                 </label>
                 <label>
-                    <input type="submit" name="sign_up" value="Inscription">
+                    <input type="submit" name="sign_up" value="Envoyer">
                 </label>
             </form>
 
         </section>
 
-        <a href="../../index.php" class="retour">Retour</a>
+        <a href="../../index.php?page=home" class="retour">Retour</a>
         <a href="../../index.php?page=legal" class="mentions_legales">Mentions légales</a>
 
         <?php

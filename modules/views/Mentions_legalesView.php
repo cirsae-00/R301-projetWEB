@@ -36,6 +36,6 @@ class Mentions_legalesView {
 
         <?php
 
-        (new \views\Layout('Mentions légales', ob_get_clean()))->show();
+        new \views\Layout('Mentions légales', ob_get_clean())->show();
     }
 }

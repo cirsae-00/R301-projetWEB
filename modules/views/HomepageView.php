@@ -64,7 +64,7 @@ class HomepageView { // PSR-12: opening brace next line
 
             </form>
             <a href="../../index.php?page=login" class="se_connecter">Se connecter</a>
-            <a href="../../index.php?page=register" class="se_connecter">S'inscrire</a>
+            <a href="../../index.php?page=register" class="inscription">S'inscrire</a>
             <a href="../../index.php?page=legal" class="mentions_legales">Mentions légales</a>
             <?php
 

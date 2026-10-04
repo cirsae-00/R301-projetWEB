@@ -7,7 +7,7 @@ class Router
         'home'  => \Controllers\Homepage::class,
         'login' => \Controllers\Login::class,
         //'register' => 'Register',
-        //'legal' => 'Legal',
+        'legal' => \Controllers\Mentions_legales::class,
         'pwforgotten' => \Controllers\PwForgotten::class,
     ];
 
@@ -22,7 +22,7 @@ class Router
         }
 
         $class = $this->routes[$page];
-        (new $class())->execute();
+        new $class()->execute();
     }
 
 }

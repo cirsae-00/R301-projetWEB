@@ -27,11 +27,12 @@ class LoginView
             </form>
         </section>
 
+        <a href="../../index.php" class="retour">Retour</a>
         <a href="../../index.php?page=legal" class="mentions_legales">Mentions légales</a>
 
         <?php
 
-        new \views\Layout('Connexion', ob_get_clean())->show();
+        new Layout('Connexion', ob_get_clean())->show();
     }
 
 }

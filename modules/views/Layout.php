@@ -11,7 +11,7 @@ public function show(): void { // PSR-12: opening brace next line
     <!-- GOOGLE SEARCH ENGINE OPTIMIZATION -->
 
     <meta name="description" content="Jouez au Wordle Informatique!">
-    <meta name="keywords" content="FOUGERON Lena, Lena, LEFEBVRE Jimmy , Jimmy ,MARTIN Diego, Diego, BUT informatique, IUT Aix-en provence, projet IUT, projet PHP, R3.01, BUT Info, AIX, bachelor universitaire de technologie, Aix-en-provence, projet, AMU, Aix Marseille Universite, jeux, games">
+    <meta name="keywords" content="FOUGERON Lena, Lena, LEFEBVRE Jimmy , Jimmy , MARTIN Diego, Diego, BUT informatique, IUT Aix-en provence, projet IUT, projet PHP, R3.01, BUT Info, AIX, bachelor universitaire de technologie, Aix-en-provence, projet, AMU, Aix Marseille Universite, jeux, games">
     <meta name="author" content="FOUGERON Lena, LEFEBVRE Jimmy, MARTIN Diego">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="index, follow">

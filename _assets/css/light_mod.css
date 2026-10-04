@@ -90,6 +90,21 @@ input[type="text"]:focus {
     transition: transform 0.15s ease, filter 0.15s ease;
 }
 
+.mentions_legales {
+    margin-top: 2rem;
+    width: 13rem;
+    height: 4rem;
+    border: none;
+    border-radius: 15px;
+    color: var(--cell);
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
 button:hover {
     transform: translateY(-2px);
     filter: brightness(0.97);

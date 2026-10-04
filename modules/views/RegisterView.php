@@ -13,7 +13,7 @@ class RegisterView
 
             <h2>Inscription</h2>
 
-            <form method="post" action="" id="form_register">
+            <form method="post" action="../../_assets/includes/base.php" id="form_register">
                 <label>
                     <input type="text" name="nom" placeholder="Nom" required>
                 </label>

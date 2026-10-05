@@ -1,7 +1,7 @@
 <?php
-$user = 'r301-fa';
-$pass = 'Yolateamalternants20?11';
 
+$user = getenv("DB_USER");
+$pass = getenv("DB_PASSWORD");
 
 try {
     $dbh = new PDO('mysql:host=mysql-r301-fa.alwaysdata.net;dbname=r301-fa_db', $user, $pass);
@@ -17,11 +17,13 @@ $gender = $_POST['gender'] ?? null;
 $email = $_POST['email'] ?? null;
 $password = $_POST['password'] ?? null;
 
-if ($nom && $prenom && $email && $password) {
+
+//Vérif que les champs sont renseignés
+if ($nom && $prenom && $email && $password && $gender) {
     $hashedPwd = password_hash($password, PASSWORD_DEFAULT); //PASSWORD_DEFAULT = algo de hachage
 
-    $query = 'INSERT INTO player (player_id,nom,prenom,genre,mail,pwd) VALUES 
-            ('.$password.','.$prenom.','.$gender.','.$email.','.$password.')';
+    //pas besoin de mettre l'id parce que j'ai mis l'auto increment dans mysql
+    $query = 'INSERT INTO player (nom,prenom,genre,mail,pwd) VALUES (:nom,:prenom,:genre,:mail,:pwd)';
 
     /*préparation de la requête finale (les :variable c'est pour la sécurité + éviter)
     les erreurs de syntaxe*/
@@ -30,7 +32,7 @@ if ($nom && $prenom && $email && $password) {
         ':nom'    => $nom,
         ':prenom' => $prenom,
         ':genre'  => $gender,
-        ':email'  => $email,
+        ':mail'  => $email,
         ':pwd'    => $hashedPwd
     ]);
 

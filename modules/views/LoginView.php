@@ -15,7 +15,11 @@ class LoginView
 
             <form method="post" action="../../index.php?page=login" id="form_login">
                 <label>
-                    <input type="email" name="email" placeholder="E-Mail" required>s
+                    <input type="email" name="email" placeholder="E-Mail" required>
+                    <?php if(!empty($errors['emailPwd'])){
+                        echo $errors['emailPwd'];
+                    }
+                    ?>
                 </label>
                 <label>
                     <input type="password" name="password" placeholder="Mot de passe" required>

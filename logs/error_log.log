@@ -16,3 +16,5 @@ Stack trace:
 [06-Oct-2026 14:16:09 Europe/Paris] PHP Warning:  parse_ini_file(/home/r301-fa/www/_assets/includes/.env): Failed to open stream: No such file or directory in /home/r301-fa/www/index.php on line 6
 [06-Oct-2026 14:27:18 Europe/Paris] SQLSTATE[HY000] [1045] Access denied for user ''@'2a00:b6e0:1:20:23::1' (using password: NO)
 [06-Oct-2026 14:33:12 Europe/Paris] SQLSTATE[HY000] [1045] Access denied for user ''@'2a00:b6e0:1:20:23::1' (using password: NO)
+[06-Oct-2026 20:44:13 Europe/Paris] SQLSTATE[HY093]: Invalid parameter number: parameter was not defined
+[06-Oct-2026 20:49:07 Europe/Paris] SQLSTATE[HY093]: Invalid parameter number: parameter was not defined

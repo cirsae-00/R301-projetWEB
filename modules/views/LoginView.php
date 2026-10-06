@@ -5,7 +5,7 @@ namespace views;
 class LoginView
 {
 
-    public function show(): void { // PSR-12: opening brace next line
+    public function show(array $errors): void { // PSR-12: opening brace next line
         ob_start();
         ?>
 

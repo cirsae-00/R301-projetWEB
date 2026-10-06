@@ -54,6 +54,7 @@ public function show(): void { // PSR-12: opening brace next line
     <title><?=$this->title ?></title>
     <?php $base = rtrim(dirname($_SERVER['SCRIPT_NAME']), '/'); ?>
     <link id="theme" rel="stylesheet" href="<?= $base ?>/_assets/css/light_mod.css">
+    <link rel="icon" type="image/x-icon" href="../../favicon.ico">
 
 
 </head>

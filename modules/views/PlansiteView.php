@@ -5,18 +5,13 @@ class PlansiteView {
     public function show() : void {
         ob_start();
         ?>
-        <h1>Plan du site</h1>
-        <p>Accueil</p>
-        <br>
-        <ul>
-            <li>Inscription</li>
-            <li>Connexion</li>
-            <li>Mot de passe oublié</li>
-        </ul>
-        <br>
-        <p>Mentions légales</p>
+        <a href="../../index.php?page=login" class="forPlan">Se connecter</a>
+        <a href="../../index.php?page=register" class="forPlan">S'inscrire</a>
+        <a href="../../index.php?page=legal" class="forPlan">Mentions légales</a>
+        <a href="../../index.php?page=pwforgotten" class="forPlan">Mot de passe oublié</a>
+        <a href="../../index.php?page=plansite" class="forPlan">Plan du site</a>
+        <a href="../../index.php?=home" class="forPlan">Accueil</a>
 
-        <a href="../../index.php?page=home" class="retour">Retour</a>
 
 <?php
         new Layout('Plan du site', ob_get_clean())->show();

@@ -11,7 +11,7 @@ class PwForgottenView{
 
             <h2>Mot de passe oublié</h2>
 
-            <form method="post" action="">
+            <form method="post" action="" id="send">
                 <label>
                     <input type="email" name="email" placeholder="E-Mail">
                 </label>
@@ -22,7 +22,7 @@ class PwForgottenView{
 
         </section>
 
-        <a href="../../index.php?page=home" class="retour">Retour</a>
+        <a href="../../index.php?page=login" class="retour">Retour</a>
         <a href="../../index.php?page=legal" class="mentions_legales">Mentions légales</a>
 
         <?php

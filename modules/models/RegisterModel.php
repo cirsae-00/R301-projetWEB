@@ -23,9 +23,9 @@ class RegisterModel
         $query = "SELECT COUNT(*) FROM player WHERE mail = :mail";
         $prepared = $this->dbh->prepare($query);
         $prepared->execute(['mail' => $email]);
-        $result = $prepared->fetchColumn();
+        $result = $prepared -> fetchColumn();
 
-        return $result != 0;
+        return $result == 1;
 
     }
 
@@ -39,13 +39,11 @@ class RegisterModel
             ':prenom' => $prenom,
             ':genre'  => $genre,
             ':mail'  => $email,
-            ':hashedPwd'    => $hashedPwd
+            ':hashedPwd'=> $hashedPwd
         ]);
 
     }
 
 }
-$register = new RegisterModel();
-$register->emailExists('Yolateam@gmail.com');
 
 

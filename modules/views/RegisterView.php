@@ -46,6 +46,9 @@ class RegisterView
                         if(!empty($errors['email'])){
                             echo $errors['email'];
                         }
+                        if(!empty($errors['emailExists'])){
+                            echo $errors['emailExists'];
+                        }
                         ?>
                     </span>
                 </label>
@@ -55,8 +58,9 @@ class RegisterView
                         <?php
                         if(!empty($errors['passwordLen'])){
                             echo $errors['passwordLen'];
-                        }
-                        if(!empty($errors['passwordContent'])){
+                        }?>
+                        <br>
+                        <?php if(!empty($errors['passwordContent'])){
                             echo $errors['passwordContent'];
                         }
                         ?>

@@ -27,28 +27,28 @@ class Register
 
                 if (!preg_match("/^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$/", $email)) {
 
-                    $errors['email'] = "Votre email n'est pas valide";
+                    $errors['email'] = "Votre email n'est pas valide !";
 
                 }
 
                 if (strlen($password) < 8) {
 
-                    $errors['passwordLen'] = "Le mot de passe doit contenir au moins 8 caractères";
+                    $errors['passwordLen'] = "Le mot de passe doit contenir au moins 8 caractères !";
 
                 }
                 if (!strpbrk($password, '@?!.;&%*')) {
 
-                    $errors['passwordContent'] = "Le mot de passe doit contenir au moins 1 caractère spécial";
+                    $errors['passwordContent'] = "Le mot de passe doit contenir au moins 1 caractère spécial !";
                 }
                 if(empty($nom)) {
 
-                    $errors['nom'] = "Votre nom ne doit pas contenir d'espaces";
+                    $errors['nom'] = "Votre nom ne doit pas contenir d'espaces !";
 
                 }
 
                 if(empty($prenom)) {
 
-                    $errors['prenom'] = "Votre prenom ne doit pas contenir d'espaces";
+                    $errors['prenom'] = "Votre prenom ne doit pas contenir d'espaces !";
 
                 }
 
@@ -56,9 +56,9 @@ class Register
 
                     $register = new RegisterModel();
 
-                    if ($register->emailExists($email)) {
+                    if ($register -> emailExists($email)) {
 
-                        $errors['emailExists'] = "Cet email est déjà utilisé.";
+                        $errors['emailExists'] = "Cet email est déjà utilisé !";
 
                     } else {
 

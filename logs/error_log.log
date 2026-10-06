@@ -1,0 +1,18 @@
+[06-Oct-2026 13:27:40 Europe/Paris] PHP Fatal error:  Uncaught Error: Class "controllers\RegisterModel" not found in /home/r301-fa/www/modules/controllers/Register.php:55
+Stack trace:
+#0 /home/r301-fa/www/modules/controllers/Router.php(25): controllers\Register->execute()
+#1 /home/r301-fa/www/index.php(8): controllers\Router->route()
+#2 {main}
+  thrown in /home/r301-fa/www/modules/controllers/Register.php on line 55
+[06-Oct-2026 13:29:05 Europe/Paris] SQLSTATE[HY000] [1045] Access denied for user ''@'2a00:b6e0:1:20:23::1' (using password: NO)
+[06-Oct-2026 13:30:06 Europe/Paris] SQLSTATE[HY000] [1045] Access denied for user ''@'2a00:b6e0:1:20:23::1' (using password: NO)
+[06-Oct-2026 13:42:35 Europe/Paris] SQLSTATE[HY000] [1045] Access denied for user ''@'2a00:b6e0:1:20:23::1' (using password: NO)
+[06-Oct-2026 14:02:32 Europe/Paris] SQLSTATE[HY000] [1045] Access denied for user ''@'2a00:b6e0:1:20:23::1' (using password: NO)
+[06-Oct-2026 14:02:45 Europe/Paris] SQLSTATE[HY000] [1045] Access denied for user ''@'2a00:b6e0:1:20:23::1' (using password: NO)
+[06-Oct-2026 14:14:05 Europe/Paris] PHP Warning:  parse_ini_file(/home/r301-fa/www_assets/includes/.env): Failed to open stream: No such file or directory in /home/r301-fa/www/index.php on line 6
+[06-Oct-2026 14:14:08 Europe/Paris] PHP Warning:  parse_ini_file(/home/r301-fa/www_assets/includes/.env): Failed to open stream: No such file or directory in /home/r301-fa/www/index.php on line 6
+[06-Oct-2026 14:14:23 Europe/Paris] PHP Warning:  parse_ini_file(/home/r301-fa/www/_assets/includes/.env): Failed to open stream: No such file or directory in /home/r301-fa/www/index.php on line 6
+[06-Oct-2026 14:16:07 Europe/Paris] PHP Warning:  parse_ini_file(/home/r301-fa/www/_assets/includes/.env): Failed to open stream: No such file or directory in /home/r301-fa/www/index.php on line 6
+[06-Oct-2026 14:16:09 Europe/Paris] PHP Warning:  parse_ini_file(/home/r301-fa/www/_assets/includes/.env): Failed to open stream: No such file or directory in /home/r301-fa/www/index.php on line 6
+[06-Oct-2026 14:27:18 Europe/Paris] SQLSTATE[HY000] [1045] Access denied for user ''@'2a00:b6e0:1:20:23::1' (using password: NO)
+[06-Oct-2026 14:33:12 Europe/Paris] SQLSTATE[HY000] [1045] Access denied for user ''@'2a00:b6e0:1:20:23::1' (using password: NO)

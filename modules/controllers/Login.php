@@ -18,7 +18,7 @@ class Login
                 $password = $_POST["password"];
                 $player = $login->getUser($email);
                 //password_verify compare la variable et le mot de passe hash stocké dans la base de donnée
-                if(!$player && !(password_verify($password,$player['pwd']))){
+                if(!$player || !(password_verify($password,$player['pwd']))){
                     $errors[] = "erreur dans le mail ou mot de passe";
                 }
 

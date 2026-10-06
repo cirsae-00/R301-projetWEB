@@ -11,6 +11,7 @@ try {
             putenv("{$id}={$value}");
 
         }
+        session_start();
 
         new \includes\autoloader()->register();
         new \controllers\Router()->route();

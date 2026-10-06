@@ -13,9 +13,9 @@ class LoginView
 
             <h2>Connexion</h2>
 
-            <form method="post" action="" id="form_login">
+            <form method="post" action="../../index.php?page=login" id="form_login">
                 <label>
-                    <input type="email" name="email" placeholder="E-Mail" required>
+                    <input type="email" name="email" placeholder="E-Mail" required>s
                 </label>
                 <label>
                     <input type="password" name="password" placeholder="Mot de passe" required>

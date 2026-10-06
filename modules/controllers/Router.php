@@ -9,6 +9,7 @@ class Router
         'register' => Register::class,
         'legal' => Mentions_legales::class,
         'pwforgotten' => PwForgotten::class,
+        'plansite' => PlanSite::class,
         'successFullLogin' => SuccessFullLogin::class,
     ];
 

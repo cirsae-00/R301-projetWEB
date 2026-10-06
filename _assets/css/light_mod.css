@@ -75,6 +75,28 @@ input[type="text"]:focus {
 
 /* Bouton */
 .se_connecter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    width: 13rem;
+    height: 4rem;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--cell);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.inscription {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 2rem;
     width: 13rem;
     height: 4rem;
@@ -91,12 +113,34 @@ input[type="text"]:focus {
 }
 
 .mentions_legales {
-    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
     width: 13rem;
-    height: 4rem;
+    height: 3rem;
     border: none;
     border-radius: 15px;
-    color: var(--cell);
+    background-color: var(--cell);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1.3rem;
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
+}
+
+.forPlan {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--cell);
+    color: var(--accent);
     font-family: inherit;
     font-size: 1.3rem;
     font-weight: 300;
@@ -106,12 +150,15 @@ input[type="text"]:focus {
 }
 
 .plan_site {
-    margin-top: 2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: 13rem;
-    height: 4rem;
+    height: 3rem;
     border: none;
     border-radius: 15px;
-    color: var(--cell);
+    background-color: var(--cell);
+    color: var(--accent);
     font-family: inherit;
     font-size: 1.3rem;
     font-weight: 300;
@@ -119,7 +166,6 @@ input[type="text"]:focus {
     cursor: pointer;
     transition: transform 0.15s ease, filter 0.15s ease;
 }
-
 button:hover {
     transform: translateY(-2px);
     filter: brightness(0.97);
@@ -160,7 +206,22 @@ section:has(#form_login) h2 {
     letter-spacing: 0.05em;
 }
 
-/* Le formulaire passe en colonne (le "form" global est en ligne) */
+section:has(#send) {
+    box-sizing: border-box;
+    width: min(100%, 24rem);
+    padding: 1.5rem 2rem 2.5rem;
+    background-color: var(--cell);
+    border-radius: 6px;
+    text-align: center;
+}
+
+section:has(#send) h2 {
+    margin: 0 0 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+}
+
 #form_register {
     flex-direction: column;
     align-items: center;
@@ -181,7 +242,24 @@ section:has(#form_login) h2 {
     width: 100%;
 }
 
-/* Champs : fond rosé, comme sur la maquette */
+#send {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+#send input[type="email"] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.7rem 0.8rem;
+    border: none;
+    background-color: var(--bg);
+    color: var(--accent);
+    font-family: inherit;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
 #form_register input[type="text"],
 #form_register input[type="email"],
 #form_register input[type="password"] {
@@ -338,9 +416,20 @@ input[type="submit"]:hover {
 
 /* Lien Retour (même style que "Mentions légales") */
 .retour {
-    margin-top: 2rem;
-    color: var(--cell);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    width: 13rem;
+    height: 3rem;
+    border: none;
+    border-radius: 15px;
+    background-color: var(--cell);
+    color: var(--accent);
+    font-family: inherit;
     font-size: 1.3rem;
     font-weight: 300;
     text-decoration: underline;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease;
 }

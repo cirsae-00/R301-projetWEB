@@ -1,7 +1,7 @@
 <?php
 
 namespace views;
-class SuccesfullLoginView {
+class SuccessfullLoginView {
     public function show(): void {
         ob_start();
         ?>

@@ -19,7 +19,7 @@ class Login
                 $login = new LoginModel();
                 $email = trim($_POST['email']);
                 $password = $_POST["password"] ?? '';
-                $player = $login->login($email, $password);
+                $player = $login->login($email);
 
                 if(empty($player) || !(password_verify($password,$player['pwd']))){
 

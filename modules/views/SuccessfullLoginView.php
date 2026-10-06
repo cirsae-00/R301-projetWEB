@@ -15,7 +15,6 @@ class SuccessfullLoginView
 
         <?php
 
-        // Utilisation de ton Layout (comme dans LoginView et RegisterView)
         new Layout('Espace Connecté', ob_get_clean())->show();
     }
 }

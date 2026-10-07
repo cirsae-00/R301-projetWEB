@@ -11,7 +11,7 @@ class PwForgottenView{
 
             <h2>Mot de passe oublié</h2>
 
-            <form method="post" action="" id="send">
+            <form method="post"  id="send">
                 <label>
                     <input type="email" name="email" placeholder="E-Mail">
                 </label>

@@ -15,9 +15,10 @@ try {
 
         new \includes\autoloader()->register();
         new \controllers\Router()->route();
+
 }   catch (\Exception $e) {
 
-
+    error_log($e->getMessage());
 
 }
 

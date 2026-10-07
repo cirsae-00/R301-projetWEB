@@ -1,6 +1,6 @@
-# R301-projetWEB
+# R301-projetWEB #
 
-##**Répartition du travail :**
+## **Répartition du travail :** ##
 - Lena : 60%
 - Jimmy : 20%
 - Diego : 20%
@@ -11,16 +11,16 @@
 
 **Lien du repo GitHub :** https://github.com/cirsae-00/R301-projetWEB
 
-##**Utilisation de l'IA : Claude**
+## **Utilisation de l'IA : Claude** ##
 - Résolution de bug
 - Explication de l'architecture MVC
 - CSS
 - Critiques sur le code déjà existant.
-###**Exemple de prompt :**
+### **Exemple de prompt :** ###
   - Explique-moi la fonction de chaque fichier et fais-moi une liste de ce qu'il faut mettre dedans.
   - Je suis en train de faire la page d'inscription, sans me donner de code ; explique-moi quelle partie du VMC récupère les données et quelle partie gère l'insertion dans la bdd.
 
-##**Sources :**
+## **Sources :** ##
 - Php Manual : https://www.php.net/manual/en/
 - Cours de M.Nevot : https://www.mickael-martin-nevot.com/univ-amu/iut/but-informatique/
 - StackOverflow : https://stackoverflow.com/questions

@@ -26,7 +26,6 @@ class SuccessfullLoginView
             }
         </style>
     <?php endif; ?>
-        <!-- -------------------------------------------------- -->
 
         <h2>Connexion réussie !</h2>
 

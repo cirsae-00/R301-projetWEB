@@ -31,6 +31,7 @@ class Login
 
                     session_regenerate_id(true);
                     $_SESSION['player_id'] = $player['player_id'];
+                    $_SESSION['player_email'] = $email;
                     header('Location: index.php?page=successFullLogin');
                     exit();
 

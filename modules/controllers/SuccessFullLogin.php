@@ -17,6 +17,10 @@ class SuccessFullLogin
             exit();
         }
 
-        new SuccessfullLoginView()->show($_SESSION['player_id']);
+        $secretEmail = 'gary@gary.gary';
+
+        $isEasterEgg = (isset($_SESSION['player_email']) && $_SESSION['player_email'] === $secretEmail);
+
+        new SuccessfullLoginView()->show($_SESSION['player_id'], $isEasterEgg);
     }
 }
